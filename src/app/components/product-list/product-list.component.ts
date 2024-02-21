@@ -4,13 +4,15 @@ import { Product } from '../../types/products';
 import { Observable } from 'rxjs';
 import { ProductService } from '../../services/product.service';
 import { ProductAlertsComponent } from '../product-alerts/product-alerts.component';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-product-list',
   standalone: true,
   imports: [
     CommonModule,
-    ProductAlertsComponent
+    ProductAlertsComponent,
+    RouterModule,
   ],
   templateUrl: './product-list.component.html',
   styleUrl: './product-list.component.scss'
