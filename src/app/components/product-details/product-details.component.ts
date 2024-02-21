@@ -16,7 +16,7 @@ import { CartService } from '../../services/cart.service';
   styleUrl: './product-details.component.scss'
 })
 export class ProductDetailsComponent {
-  products: Observable<Product[]> = new Observable<Product[]>();
+  products!: Observable<Product[]>;
   product: Product | undefined;
 
   constructor(private route: ActivatedRoute, private productService: ProductService, private cartService: CartService) { }

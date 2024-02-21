@@ -19,7 +19,7 @@ import { RouterModule } from '@angular/router';
 })
 
 export class ProductListComponent {
-  products: Observable<Product[]> = new Observable<Product[]>();
+  products!: Observable<Product[]>;
 
   constructor(private productService: ProductService) { }
 
