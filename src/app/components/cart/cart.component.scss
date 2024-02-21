@@ -1,0 +1,9 @@
+.container {
+  margin-top: 10px;
+  
+  &__list {
+    display: flex;
+    margin-top: 10px;
+    gap: 10px
+  }
+}
